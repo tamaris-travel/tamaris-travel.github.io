@@ -75,6 +75,7 @@ $(document).ready(function(){
         var input_name          = $("#name").val(),
             input_tujuan        = $("#tujuan").val(),
             input_alamat        = $("#alamat").val(),
+            input_phone         = $("#phone").val(),
             input_product       = $("#product").val(),
             input_description   = $("#description").val();
      
@@ -90,12 +91,13 @@ $(document).ready(function(){
             var walink = 'whatsapp://send';
         }
      
-        if(input_name != "" && input_alamat != "" && input_product != ""){
+        if(input_name != "" && input_alamat != "" && input_phone != "" && input_product != ""){
             /* Whatsapp URL */
             var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
                 '*Nama* : ' + input_name + '%0A' +
                 '*Alamat* : ' + input_alamat+ '%0A' +
                 '*Tujuan*  : ' + input_tujuan + '%0A' +
+                '*Nomor Kontak / Whatsapp* : ' + input_phone + '%0A' +
                 '*Produk* : ' + input_product + '%0A' +
                 '*Catatan* : ' + input_description + '%0A';
      
