@@ -80,7 +80,7 @@ $(document).ready(function(){
      
         /* Pengaturan Whatsapp */
         var walink      = 'https://web.whatsapp.com/send',
-            phone       = '6283147372179',
+            phone       = '6281224386780',
             text        = 'Halo saya ingin memesan ',
             text_yes    = 'Pesanan Anda berhasil terkirim.',
             text_no     = 'Isilah formulir terlebih dahulu.';
@@ -95,7 +95,7 @@ $(document).ready(function(){
             var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
                 '*Nama* : ' + input_name + '%0A' +
                 '*Alamat* : ' + input_alamat+ '%0A' +
-                '*Tujuan : ' + input_tujuan + '%0A' +
+                '*Tujuan*  : ' + input_tujuan + '%0A' +
                 '*Produk* : ' + input_product + '%0A' +
                 '*Catatan* : ' + input_description + '%0A';
      
