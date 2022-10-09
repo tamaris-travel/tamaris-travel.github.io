@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
 
 </head>
 <body>
@@ -22,27 +23,25 @@
         <div class="max-width">
             <div class="logo"><a href="#">Tamarin<span>Travel.</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Teams</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#beranda" class="menu-btn">Beranda</a></li>
+                <li><a href="#about" class="menu-btn">Tentang</a></li>
+                <li><a href="#tarif" class="menu-btn">Tarif</a></li>
+                <li><a href="#pesan" class="menu-btn">Pesan</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
-
+<!-- 083147372179 -->
     <!-- home section start -->
-    <section class="home" id="home">
+    <section class="home" id="beranda">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Selamat, Datang</div>
                 <div class="text-2">Tamaris Travel</div>
                 <div class="text-3">Kami siap mengantar jemput ke <span class="typing"></span></div>
-                <a href="#">Order Sekarang</a>
+                <a href="#pesan">Pesan Sekarang</a>
             </div>
         </div>
     </section>
@@ -52,41 +51,43 @@
         <div class="max-width">
             <h2 class="title">Tentang kami</h2>
             <div class="about-content">
-                <div class="column left">
-                    <img src="images/admin.jpg" alt="">
-                </div>
+                <center>
                 <div class="column right">
                     <div class="text">Tamaris Travel<span class="typing-2"></span></div>
                     <p>Tamaris Travel adalah sebuah layanan jasa untuk travel antar jemput bandara, kami selalu memprioritaskan keselamatan penumpang dan juga kenyamanan penumpang hingga sampai dengan tujuan dengan selamat.</p>
                 </div>
+                </center>
             </div>
         </div>
     </section>
 
     <!-- services section start -->
-    <section class="services" id="services">
+    <section class="services" id="tarif">
         <div class="max-width">
             <h2 class="title">Tarif Mobil</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <img src="images/image1.png" alt="">
+                        <div class="text">Innova</div>
                         <div class="text">Rp.800.000/-</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                       <p>Kami siap melayani dengan sepenuh hati, kenyamanan anda dan keselamatan anda merupakan prioritas kami.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/image2.png" alt="">
+                        <div class="text">Avanza</div>
                         <div class="text">Rp.700.000/-</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                       <p>Kami siap melayani dengan sepenuh hati, kenyamanan anda dan keselamatan anda merupakan prioritas kami.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/image3.png" alt="">
+                        <div class="text">Aice</div>
                         <div class="text">Rp.1.400.000/-</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                       <p>Kami siap melayani dengan sepenuh hati, kenyamanan anda dan keselamatan anda merupakan prioritas kami.</p>
                     </div>
                 </div>
                </div>
@@ -95,7 +96,7 @@
     </section>
 
     <!-- contact section start -->
-    <section class="contact" id="contact">
+    <section class="contact" id="pesan">
         <div class="max-width">
             <h2 class="title">Mau Booking</h2>
             <div class="contact-content">
@@ -121,7 +122,7 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">tamaristravelbandung@gmail.com</div>
+                                <div class="sub-title">tamrinteomanik1984@gmail.com</div>
                             </div>
                         </div>
                     </div>
@@ -131,23 +132,31 @@
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nama" required>
+                                <input type="text" placeholder="Nama" id="name" required>
                             </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Mobil" required>
+                            <div class="name field"  >
+                                <select name="product" class="field name" style="border-radius: 6.5px;" id="product">
+                                    <option value="">-- Pilih Mobil --</option>
+                                    <option value="Avanza">Avanza</option>
+                                    <option value="Innova">Innova</option>
+                                    <option value="Aice">Aice</option>
+                                </select>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Alamat" required>
+                            <input type="text" placeholder="Alamat" id="alamat" required>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Tujuan" required>
+                            <input type="text" placeholder="Tujuan" id="tujuan" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Pesan" required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Pesan" id="description" required></textarea>
                         </div>
-                        <div class="button-area">
-                            <button type="submit">Kirim Pesan</button>
+                        <!-- <div class="button-area">
+                            <button class="send"type="submit">Kirim Pesan</a> </button>
+                        </div> -->
+                        <div class="form-group button-area">
+                            <button class="btn btn-success send">Pesan via WhatsApp</button>
                         </div>
                     </form>
                 </div>
@@ -157,9 +166,8 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+        <span>Agen <a href="https://tamaris-travel.github.io/">Tamaris Travel</a> | <span class="far fa-copyright"></span> 2022 hak cipta.</span>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
