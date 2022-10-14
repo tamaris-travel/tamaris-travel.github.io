@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Soekarno Hatta", "Halim Perdanakusuma", "Kerta Jati",],
+        strings: ["Soekarno Hatta", "Bandung", "Bekasi", "Halim Perdanakusuma", "Kerta Jati",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["**Soekarno Hatta", "**Halim Perdanakusuma", "**Kerta Jati",],
+        strings: ["**Soekarno Hatta","**Bandung", "**Bekasi", "**Halim Perdanakusuma", "**Kerta Jati",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

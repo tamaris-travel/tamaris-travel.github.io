@@ -238,7 +238,7 @@ section .title::after{
 .about .about-content .right .text span{
     color: rgb(3, 143, 38);
 }
-.about .about-content .right p{
+.about .about-content .right h3{
     text-align: justify;
 }
 .about .about-content .right a{
